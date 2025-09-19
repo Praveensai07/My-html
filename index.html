@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./portifolio-new.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=group" />
+    <style>
+*{
+    box-sizing: border-box;
+    /* animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view();  */
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height:max-content;
+    /* padding: 5px; */
+    /* background-color: rgb(230, 230, 230); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(150, 150, 150);
+    /* border: 3px solid black; */
+    position: relative;
+    top: 0;
+}
+.home-icon{
+    background-color: dodgerblue;
+    padding: 3px ;
+    margin: 0;
+    position: relative;
+    /* left: -25px; */
+    display: flex;
+    align-items: center;
+
+}
+
+.head-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    width: 22%;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.head-nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-inp{
+    width: 40%;
+    height: 27px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 4px 4spx 5px rgba(0, 0, 0, 0.507);
+}
+.head-inp::placeholder{
+    padding: 0 7px;
+    font-family: poppins;
+    outline:none;
+}
+.head-btns{
+    display: flex;
+    column-gap: 10%;
+    margin-right: 15px;
+    align-items: center;
+}
+.head-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn-left{
+    background-color: transparent;
+    /* border: 2px solid black; */
+    background-color: rgb(81, 231, 81);
+}
+.btn-left:hover{
+    background-color: rgb(0, 224, 0);
+    /* color:black; */
+    transition: 0.2s ease-in;
+}
+
+.btn-right{
+    background-color: rgb(68, 68, 255);
+}
+.btn-right:hover{
+    background-color: rgb(0, 0, 235);
+    transition: 0.2s ease-in;
+    /* color: black; */
+}
+.main-head{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color:#000000cc;
+    color: #ffffff;
+    width: 100%;
+    height:70px;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.logo{
+    width: 20%;
+    font-size: 30px;
+}
+.nav-links-div{
+    width: 60%;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    color: rgb(214, 214, 214);
+}
+.list-link:hover{
+    color: orange;
+    transition: 0.4s ease-in;
+}
+.sec1-btn{
+    padding: 7px;
+    width: 100%;
+    align-self: flex-end;
+    background-color: transparent;
+    border: 2px solid orange;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(236, 236, 236);
+}
+.nav-btn{
+    width: 150px;
+    padding: 10px;
+   
+}
+.sec1-btn:hover{
+    background-color: orange;
+    color:white;
+    transition: 0.4s ease-in-out;
+}
+.img-office{
+    animation: side-in ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.sector1{
+width: 100%;
+margin: 0%;
+height: 700px;
+position: relative;
+top: 0;
+padding: 8%;
+background-image: url('https://e0.pxfuel.com/wallpapers/398/350/desktop-wallpaper-nillia-webdesign-web-development-management.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-color: rgba(0, 0, 0, 0.507);
+background-blend-mode: darken;
+z-index: 0;
+color: white;
+
+}
+.div1{
+    align-items: center;
+    row-gap: 5px;
+    text-align: center;
+}
+.section-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 40px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    animation: pop-up  ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.div1-h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: poppins ;
+    animation: pop-up-head 1s linear 0s 1 normal;
+}
+.low-h1{
+    animation: pop-up-head 1s linear 0s 1 normal;
+}
+.div1-h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+    animation: pop-up-head 1s ease-in 0s 1 normal;
+}
+.div2{
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    /* margin-top: 4%; */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+     
+    animation: pop-up  ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+    
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid grey;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2%;
+    cursor: pointer;
+    animation: pop-up-box 1s ease-in 0s 1 normal;
+}
+.icon{
+    font-size: 45px;
+}
+.python-img{
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+}
+#java{
+    font-size: 47px;
+    background: linear-gradient(1800deg,steelblue,orangered);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.box:hover{
+    border:2px solid orange;
+    transition: 0.4s ease-in;
+}
+.section-det{
+    width: 100%;
+    height: max-content;
+    margin:0;
+    position: relative;
+    top: 0;
+    padding: 20px 40px;
+    /* display: flex; */
+    
+    
+}
+p{
+    font-family: poppins;
+    margin: 10px 20px;
+    animation: side-in ease-in 1s;
+    animation-range: entry 0 cover 25%;
+    animation-timeline: view(); 
+
+}
+p.tick::before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f4b225;
+}
+.section-content{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.section-child{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.partner-img{
+    width: 200px;
+    height: 110px;
+    margin-right: 10px;
+    filter: grayscale(100%);
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.partner-img:hover{
+    filter: grayscale(0);
+    transform: scale(1.15);
+    transition: 0.3s ease-in-out;
+}
+.section-partners{
+    height: max-content;
+}
+.partners-section-child{
+     padding: 10px 3%;
+     margin:10px 20px;
+     display: flex;
+     flex-direction:row;
+    align-items: center;
+
+    column-gap: 4%;
+    justify-content: flex-start;
+}
+.side-head{
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 25px;    
+}
+.caption{
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: rgb(94, 94, 94);
+}
+.img-left{
+    width: 50%;
+    
+}
+.content-img{
+    height: 420px;
+    width: 470px;
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.content-right{
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 5%;
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.content-child{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 3% 0;
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.child-icon{
+    font-size: 40px;
+    color: #ffa914;
+}
+.section-flex{
+    height: 1000px;
+}
+.container{
+    width: 30%;
+    height: 385px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4%;
+    /* border: 1px solid grey; */
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.607); 
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.skill-flex{
+    margin: 4% 0px;
+}
+.cont-head{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21px;
+}
+.text{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size: 16px;
+    color: rgb(0, 0, 0);   
+}
+.view-btn{
+    border: none;
+    color: black;
+    background-color: #ffa914;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.view-btn:hover{
+    background-color: transparent;
+    border: 2px solid #ffa914;
+    color: #ffa914;
+    font-weight: 600;
+    transition: 0.3s linear;
+}
+.container:hover{
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.507);
+    transform: translateY(-20px);
+    transition: 0.3s ease-in-out;
+}
+.team-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: -5px;
+}
+.team-flex{
+    column-gap: 2%;
+}
+.team-img{
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    filter: drop-shadow( 0px 0px 3px black);
+    transition: 0.4s linear;
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.team-img:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.507);
+}
+.img1{
+    background-image: url('https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/db41ab2f-24e1-4659-8514-74f9ecc01b1d/width=450/8859944cd6d02c6e03f559913de7f4651380368bfef9505ef558fff919af440b_autismmixSDXL_autismmixPony.jpeg');
+}
+.img2{
+    background-image: url('https://cdn.staticneo.com/w/naruto/Nprofile2.jpg');
+}
+.img3{
+    background-image: url('https://i.pinimg.com/736x/b6/5f/85/b65f85cc50a20590b8b136b255057e09.jpg');
+}
+.img4{
+    background-image: url('https://pbs.twimg.com/media/EgGy7VHU0AAE8fM.jpg');
+}
+.section-join{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+}
+.join{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", serif;
+    padding: 0 100px;
+    background-image: url('https://images.pexels.com/photos/6847139/pexels-photo-6847139.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-blend-mode:darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.join-text{
+    color: white;
+}
+.join-btn{
+    margin: 10px;
+    border: 2px solid white;
+    font-family: poppins;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+    transition: 0s linear;
+    animation: pop-up  ease-in;
+    animation-range: entry 0 cover 10%;
+    animation-timeline: view(); 
+}
+.join-btn:hover{
+    color: black;
+    background-color: #ffa914;
+    border: none;
+    transform: scale(1.09);
+}
+.foot-flex{
+    justify-content: space-evenly;
+}
+.foot-icon{
+    font-size: 30px;
+    height: max-content;
+    width: 35px;
+    border-radius: 3px;
+    background-color: #f4a02a;
+    color: black;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+.foot-inp{
+    border: 1px solid grey;
+    border-radius: 2px;
+    width: 400px;
+    height: 35px;
+}
+.field-right{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.foot-btn{
+    align-self: center;
+}
+.msg-btn{
+    display: flex;
+    justify-content: center;
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.foot-section{
+    background-color: #000;
+    color: #fff;
+}
+.foot-title{
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 17px;
+    animation: pop-up ease-in;
+    animation-range: entry 0 cover 20%;
+    animation-timeline: view(); 
+}
+.icon2{
+    font-size: 35px;
+    margin: 7px;
+    color: rgb(255, 255, 255);
+}
+#insta:hover{
+    cursor: pointer;
+    background-image: linear-gradient(200deg ,rgb(119, 0, 255) 10%,rgb(255, 0, 119),rgb(255, 217, 0));
+    height: 30px;
+    border-radius: 13px;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+#twitter:hover{
+    color:  dodgerblue;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+#facebook:hover{
+    color:blue;
+      transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+#linkedin:hover{
+    color: blue;
+      transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+.foot-box{
+    color: white;
+    height: max-content;
+    width: max-content;
+    /* box-shadow: 0px 0px 3px grey; */
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 4px;
+}
+.foot-caption,.foot-caption-two{
+    color: grey;
+    font-family: poppins;
+}
+
+.foot-caption-two::before{
+    content: ">";
+    color: #f4a02a;
+    margin: 1px;
+}
+.foot-caption-two:hover{
+    color: #f4a02ad7;
+    transition: 0.3s ease-in;
+}
+.last-flex{
+    justify-content: space-between;
+}
+.climax{
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+     justify-content: center;
+    padding: 15px;
+
+}
+@keyframes side-in {
+    from {
+        transform: scale(0.1);
+        transform: translateX(-500px);
+        opacity: 0.3;
+    }
+     to{
+        transform: scale(1);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes pop-up {
+    from {
+        transform: scale(0.1);
+        transform: translateY(20px);
+        opacity: 0.3;
+    }
+     to{
+        transform: scale(1);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes pop-up-head {
+    from {
+        transform: scale(0.1);
+        transform: translateY(25px);
+        opacity: 0;
+    }
+     to{
+        transform: scale(1);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}@keyframes pop-up-box {
+    from {
+        transform: scale(0);
+        transform: translateY(30px);
+        opacity: 0;
+    }
+     to{
+        transform: scale(1);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1100px) {
+    .team-img{
+        height: 200px;
+        width: 20%;
+    }}
+@media screen and (max-width:870px){
+    .content-img{
+        height: 200px;
+        width: 15%;
+    }
+    .caption{
+        padding:0 15px;
+        margin-right:40px ;
+        width: fit-content;
+    }
+    .foot-inp{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 776px) {
+    .body{
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .header{
+        display: none;
+    }
+    .section-det{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .flex{
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 15px;
+        margin-left: 42px;
+    }
+    .main-head{
+        width: 100%;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .sec1-btn{
+        justify-self: flex-start;
+    }
+    .nav-links{
+        display: none;
+        flex-wrap: wrap;
+    }
+    .sector1{
+        width: 100%;
+        /* position: absolute; */
+        height: max-content;
+    }
+    .div1-h1{
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    .div1-h3{
+        font-size: 20px;
+    }
+    .section-title{
+        margin-left: 0px;
+    }
+    .box{
+        width: 200px;
+        height: 150px;
+    }
+    .img-office{
+        height: 330px;
+        width: 330px;
+    }
+    .partner-img{
+        height: 95px;
+        width: 140px;
+    }
+    .content-img{
+        height: 330px;
+        width: 330px;
+    }
+    .flex-reverse{
+        flex-direction: column-reverse;
+    }
+    .content-child{
+        align-items: flex-start;
+        align-self: flex-start;
+    }
+    .content-right{
+        align-self: start;
+    }
+    .container{
+        width: fit-content;
+        height: fit-content;
+    }
+    .team-img{
+        width: 330px;
+        height: 330px;
+    }
+    .team-flex{
+        row-gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .join{
+        width: 100%;
+    }
+    .join-text{
+        font-size: 14px;
+        text-align: center;
+    }
+    .field-left{
+        width: 300px;
+    }
+    .content-child{
+        width: 300px;
+    }
+    .foot-flex{
+        width: 300px;
+    }
+    .field-right{
+        width: 300px;
+    }
+     .last-flex{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+    .foot-section{
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="head-left">
+                <div class="home-icon">
+                    <a href="#top"><i class="fa-solid fa-house home-symbol" style="color: #000; font-size: 20px;"></i>
+                    </a>
+                </div>
+                <div>Potifolio </div>
+            </div>
+        <div class="head-nav">
+            <input type="text" placeholder="search" class="head-inp">
+            <div class="head-btns">
+                <div><input type="button" value="Sign Up" class="head-btn btn-left"></div>
+                <div><input type="button" value="Sign In" class="head-btn btn-right"></div>
+            </div>
+        </div>
+    </div>
+         <div class="main-head">
+            <div class="logo">
+                Portiofolio
+            </div>
+             <div class="nav-links-div">
+                
+                    <ul class="nav-links">
+                        <li class="list-link">Home</li>
+                        <li class="list-link">Services</li>
+                        <li class="list-link">Portifolio</li>
+                        <li class="list-link">Team</li>
+                        <li class="list-link">About</li>
+                        <li class="list-link">Contact</li>
+                    </ul>
+                
+            </div>
+            <div class="nav-btn">
+                <input type="button" value="Join Now" class="sec1-btn">
+            </div>
+        </div> 
+    </header>
+    <section class="sector1">
+        <div class="div1">
+            <div class="div1-h1">Learn programming</div>
+            <div class="div1-h1 low-h1">languages with PS</div>
+            <h3 class="div1-h3">We are team of talented gifted youth</h3>
+        </div>
+        <div class="div2">
+            <div class="flex">
+                <div class="box ">
+                    <i class="fa-brands fa-python icon" style="color:darkcyan;"></i>
+                    <h2>Python</h2>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-html5 icon" style="color: red;"></i>
+                    <h2>Html</h2>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-java icon" id="java" ></i>
+                    <h2>Java</h2>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-js icon" style="color: yellow;"></i>
+
+                    <h2>Javascript</h2>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-css3-alt icon" style="color: blue;"></i>
+                    <h2>CSS</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-det">
+        <div class="flex flex-reverse">
+        <div class="section-content">
+           <div class="side-head">
+                They provide the most valuable pleasure
+            </div>
+            <p >It is important to take care of the patient, to be followed by the client, but at the same time they will be affected by some great pains and sufferings.</p>
+            <p class="tick">I do not work at all except to get some advantage out of it.</p>
+            <p class="tick">I do not work at all except to get some advantage out of it.</p>
+            <p class="tick">I do not work at all except to get some advantage out of it.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, repudiandae, corporis quae fugiat tenetur voluptatem autem quis sequi iste nemo maiores obcaecati excepturi quam dolor ullam animi doloribus aspernatur mollitia.</p>            
+
+
+        </div>
+        <div class="img">
+            <img src="https://builder.bootstrapmade.com/static/img/template/Gp/about.jpg" height="400px"width="500px" alt="office" class="img-office">
+        </div>
+    </div>
+    </section>
+    <section class="section-det section-partners">
+        <div class="section-title">Our Partners</div>
+            <div class="section-child partners-section-child">
+                <div>
+                    <img class="partner-img" src="https://i.pinimg.com/736x/e1/a5/9d/e1a59d17b5c0bc85d5fd4d7ae3299b90.jpg" alt="">
+                    <img class="partner-img" src="https://iconape.com/wp-content/png_logo_vector/naruto-shippuden-logo.png"  alt="">
+                    <img class="partner-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT0ZwZz-5hAGCjNYc8603JoyTsSIwD3-XiGg&sg" alt="">
+                </div>
+                <div>
+                    <img class="partner-img" src="https://www.pngitem.com/pimgs/m/77-774883_transparent-bleach-logo-bleach-hd-png-download.png"alt="">
+                    <img class="partner-img" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Dragon_Ball_Super.png">
+                </div>  
+            </div>
+         
+    </section>
+    
+    <section class="section-det">
+        <div class="flex">
+        <div class="section-content">
+        
+         <div class="img-left">
+            <img src="https://builder.bootstrapmade.com/static/img/template/Gp/about.jpg"  class="content-img" >
+         </div>
+         </div>
+         <div class="content-right">
+            <div class="content-child">
+                <i class="fa-solid fa-user-group child-icon" style="color: #ffa914;"></i>
+                <div class="side-head">It is hard working
+                    <div class="caption">They are the result, or as it were, of something that is equal to these labors, except that some</div>
+                </div>
+                
+            </div>
+            <div class="content-child">
+                <i class="fa-solid fa-basket-shopping child-icon" ></i>
+                <div class="side-head">of these who
+                    <div class="caption">Unless they are blinded by lust, they do not come forth; they are in fault who abandon their duties</div>
+                </div>
+                
+            </div>
+            <div class="content-child">
+                <i class="fa-solid fa-wifi child-icon"></i>
+                <div class="side-head">or blacked out
+                    <div class="caption">Either he takes it with no one, or everyone. All the pains that the elders do</div>
+                </div>
+                
+            </div>
+            <div class="content-child">
+                <i class="fa-solid fa-video child-icon"></i>
+                <div class="side-head">of the blessed truth
+                    <div class="caption">The expedients of the truth are of no consequence at the time of the praises of the covenants of life</div>
+                </div>
+                
+            </div>
+         </div>
+        </div>
+    </section>
+    <section class="section-det section-flex">
+        <div class="section-title">Languages to learn</div>
+        <div class="flex skill-flex">
+            <div class="container">
+                <i class="fa-brands fa-html5 icon" style="color: red;" id="html"></i>
+                <h3 class="cont-head">Html</h3>
+                <div class="text">HTML is the standard markup language for Web pages.
+                    With HTML you can create your own Website.
+                    HTML is easy to learn - You will enjoy it!. It provides the structure of a webpage by using various elements.
+                </div>
+                    <div >
+                        <input type="button" value="Learn more" class="view-btn">
+                    </div>
+            </div>
+            <div class="container">
+                <i class="fa-brands fa-css3-alt icon" style="color: blue;" id="css"></i>
+                <h3 class="cont-head">Css</h3>
+                <div class="text">
+                    CSS is a language that describes the style of an HTML document.
+                    CSS describes how HTML elements should be displayed.
+                    This tutorial will teach you CSS from basic to advanced.</div>
+                    <div >
+                        <input type="button" value="Learn more" class="view-btn">
+                    </div>
+                </div>
+            
+            <div class="container">
+                <i class="fa-brands fa-js icon" style="color: gold;" id="js"></i>
+                <h3 class="cont-head">Javascript</h3>
+                <div class="text">JavaScript is the world's most popular programming language.
+                    JavaScript is the programming language of the Web.
+                    JavaScript is easy to learn.JavaScript is the programming language of the Web.</div>
+                    <div >
+                        <input type="button" value="Learn more" class="view-btn">
+                    </div>
+            </div>
+        </div>
+        <div class="flex skill-flex">
+            <div class="container">
+                <i class="fa-brands fa-java icon"   id="java"></i>
+                <h3 class="cont-head">Java</h3>
+                <div class="text">Java is a high-level programming language developed by Sun Microsystems.
+                    It designed for developing programs for set-top boxes and handheld devices, and to creating web applications.</div>
+                    <div >
+                        <input type="button" value="Learn more" class="view-btn">
+                    </div>
+            </div>
+            <div class="container">
+                <i class="fa-brands fa-python icon" style="color: darkcyan;" id="python"></i>
+                <h3 class="cont-head">Python</h3>
+                <div class="text">Python is an interpreted, high-level and general-purpose programming language.
+                    Python's design philosophy emphasizes code readability with its notable use of significant indentation.</div>
+                    <div >
+                        <input type="button" value="Learn more" class="view-btn">
+                    </div>
+            </div>
+            <div class="container">
+                <i class="fa-brands fa-php icon" style="color: #7377ad;" id="php"></i>
+                <h3 class="cont-head">Php</h3>
+                <div class="text">PHP is a popular general-purpose scripting language that is especially suited to web development.
+                    Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.</div>
+                    <div >
+                        <input type="button" value="Learn more" class="view-btn">
+                    </div>
+            </div>
+        </div>
+         
+    </section>
+    <section class="section-det">
+        <div class="section-title">Our Team</div>
+        <div class="flex team-flex">
+            <div class="team-container">
+                <!-- <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyUL1aSzZ_7zhoKfN3DluMv1LDyXXucJJjzbBxtVGXIrgl3Ecd2Yj_KRaMqtGICEpOOl4&usqp=CAU" class="team-img"> -->
+                <div class="team-img img1"></div>
+                <div class="cont-head">Eren Yeager</div>
+                <div class="caption">CEO</div>
+            </div>
+            <div class="team-container">
+                <!-- <img src="https://cdn.staticneo.com/w/naruto/Nprofile2.jpg" alt="" class="team-img"> -->
+                <div class="team-img img2"></div>
+                <div class="cont-head">Naruto Uzumaki</div>
+                <div class="caption">CTO</div>
+            </div>
+            <div class="team-container">
+                <!-- <img src="https://i.pinimg.com/736x/7b/f3/e7/7bf3e7f7f1810c5540f83cddd0ac1d2f.jpg" alt="" class="team-img"> -->
+                <div class="team-img img3"></div>
+                <div class="cont-head">Ben Tennyson</div>
+                <div class="caption">Designer</div>
+            </div>
+            <div class="team-container">
+                <!-- <img src="https://pbs.twimg.com/media/EgGy7VHU0AAE8fM.jpg" alt="" class="team-img"> -->
+                <div class="team-img img4"></div>
+                <div class="cont-head">Light Yagami</div>
+                <div class="caption">Developer</div>
+            </div>
+        </div>
+    </section>
+    <section class="section-det section-join">
+        <div class="join">
+            <h2 class="side-head">Join now</h2>
+            <div class="text join-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed voluptatibus ducimus reiciendis excepturi. Alias in dicta fugiat, quaerat nam incidunt sequi sunt excepturi eveniet possimus tenetur vel praesentium ea.</div>
+            <div><input type="button" value="Join now" class="sec1-btn join-btn"></div>
+        </div>
+    </section>
+    
+    <section class="section-det">
+        <div class="contact-us">
+            <div class="section-title">Contact us</div>
+            <!-- iframe  -->
+             <!-- <div class="iframe"></div> -->
+             <div class="flex foot-flex">
+                <div class="field-left">
+                    <div class="content-child">
+                        <div><i class="fa-solid fa-location-dot foot-icon" ></i></div>
+                        <div class="cont-head">Address
+                            <div class="caption">IIIT Nuzvid , mylavaram road ,Nuzvid 521202</div>
+                        </div>
+                    </div>
+                    <div class="content-child">
+                            <div><i class="fa-solid fa-phone foot-icon"  ></i></div>
+                        <div class="cont-head">Call Us
+                            <div class="caption">+91 99999 99999 </div>
+                        </div>
+                    </div>
+                    <div class="content-child">
+                        <div><i class="fa-solid fa-envelope foot-icon"  ></i></div>
+                        <div class="cont-head">Email Us
+                            <div class="caption">example@gmail.com</div>
+                        </div>
+                    </div>
+             </div>
+             <div class="field-right">
+                <div><input type="text" placeholder="Your Name" class="head-inp foot-inp"> &nbsp;&nbsp; 
+                <input type="text" placeholder="Your Email" class="head-inp foot-inp"></div><br> <br>
+                <input type="text" placeholder="Subject" class="head-inp foot-inp"><br> <br>
+                <textarea cols="30" rows="7 " placeholder="Message" class="head-inp foot-inp"></textarea> <br>
+             </div>
+        </div>
+        <div class="msg-btn"><input type="button" value="Message" class="view-btn foot-btn"></div>
+    </section>
+    <footer class="section-det foot-section"> 
+        <div class="footer">
+            <div class="foot-title">
+                <h2> Follow us on</h2>
+            <a href="www.instagram.com"><i class="fa-brands fa-instagram icon2" id="insta"width="200px" height="200px"></i></a>
+            <a href="www.https://twitter.com"><i class="fa-brands fa-twitter icon2" id="twitter"></i></a>
+            <a href="www.facebook.com"><i class="fa-brands fa-facebook icon2" id="facebook"></i></a>
+            <a href="www.linkedin.com"><i class="fa-brands fa-linkedin icon2" id="linkedin"></i></a>
+            </div>
+            <div class="flex last-flex">
+                <div class="foot-box">
+                    <div class="cont-head">Address</div>
+                    <div class="foot-caption">IIIT Nuzvid
+                        <div class="foot-caption">Nuzvid,Eluru dist,AP</div>
+                    </div>
+                    <div class="foot-caption"><b>Phone</b> :+91 99999 99999
+                        <div class="foot-caption"><b>Email:</b> example07@gmail.com</div>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <div class="cont-head"><b>Useful links</b></div>
+                    <div class="foot-caption-two">Home</div>
+                    <div class="foot-caption-two">About us</div>
+                    <div class="foot-caption-two">Services</div>
+                    <div class="foot-caption-two">Terms of Services</div>
+                    <div class="foot-caption-two">Privacy policy</div>
+                </div>
+                <div class="foot-box">
+                    <div class="cont-head"><b>Our Services</b></div>
+                    <div class="foot-caption-two">web Design</div>
+                    <div class="foot-caption-two">Web development</div>
+                    <div class="foot-caption-two">Product Management</div>
+                    <div class="foot-caption-two">Marketing</div>
+                    <div class="foot-caption-two">Graphic design</div>
+                </div>
+                <div class="foot-box"></div>
+                <div class="foot-box"></div>
+            </div>
+            <div class="climax">&#169; All rights are reserved by sai's prvt lmt</div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
